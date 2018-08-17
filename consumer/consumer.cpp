@@ -1,4 +1,5 @@
 // consumer.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// (c) Mark Borg, August 2018
 //
 
 #include <iostream>
