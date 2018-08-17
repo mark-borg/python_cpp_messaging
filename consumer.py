@@ -1,3 +1,6 @@
+# Consumer
+# (c) Mark Borg, August 2018
+
 import sys
 import pika
 import cv2
