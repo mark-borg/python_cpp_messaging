@@ -9,10 +9,10 @@ In addition, examples are given of how to encode string data, as well as images.
 
 ## Requirements
 
-RabbitMQ   (https://www.rabbitmq.com/)
-OpenCV   (https://opencv.org/)
-Pika     (https://pika.readthedocs.io/en/stable/)
-rabbitmq-c   (https://github.com/alanxz/rabbitmq-c)
+- RabbitMQ   (https://www.rabbitmq.com/)
+- OpenCV   (https://opencv.org/)
+- Pika     (https://pika.readthedocs.io/en/stable/)
+- rabbitmq-c   (https://github.com/alanxz/rabbitmq-c)
 
 I am using Visual Studio 2017 for compiling the C++ code (solution file included). 
 For the C++ code, static linking is used for the rabbitmq-c library. (Dynamic linking can be configured instead). There are two Visual Studio property sheets (RabbitMQ.props and OpenCV x64.props) that simplify the configuration of the C++ project files - paths will definitely need changing to point to the correct location where rabbitmq-c and OpenCV have been installed.
@@ -29,28 +29,28 @@ The default test involves string-based messaging. To run the image-based messagi
 Possible combinations of tests include:
 
 (1) python to python string-based messaging
-python producer.py
-python consumer.py
+- python producer.py
+- python consumer.py
 
 (2) python to python image-based messaging
-python producer.py images
-python consumer.py images
+- python producer.py images
+- python consumer.py images
 
 (3) C++ to C++ string-based messaging
-producer.exe 
-consumer.exe 
+- producer.exe 
+- consumer.exe 
 
 (4) C++ to C++ image-based messaging
-producer.exe images
-consumer.exe images
+- producer.exe images
+- consumer.exe images
 
 (5) python to C++ image-based messaging
-python producer.py images
-consumer.exe images
+- python producer.py images
+- consumer.exe images
 
 (6) C++ to python image-based messaging
-producer.exe images
-python consumer.py images
+- producer.exe images
+- python consumer.py images
 
 
 ## Results
